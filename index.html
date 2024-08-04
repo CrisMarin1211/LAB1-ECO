@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch API Example</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="app-container">
+			<div class="title">
+				<h1>RANDOM USER'S</h1>
+			</div>
+			<button id="fetch-button">Fetch Random User</button>
+			<div id="data-container"></div>
+
+			<div class="cats-container">
+				<div class="title">
+					<h1>CAT FACT</h1>
+				</div>
+				<button id="fetch-cat-fact-button">Fetch Cat Fact</button>
+				<div id="data-cats-container"></div>
+
+			<div class="container-anime">
+				<div class="title">
+					<h1>ANIME</h1>
+				</div>
+				<div class="form-search-anime">
+					<form id="form-anime">
+						<input type="number" name="limit-number" placeholder="limit number" required />
+						<input type="text" name="query" placeholder="Search param" required />
+						<select id="opciones" name="lista-despegable">
+							<option value="tv">TV</option>
+							<option value="movie">Movie</option>
+							<option value="ova">Ova</option>
+							<option value="special">Special</option>
+							<option value="ona">Ona</option>
+							<option value="music">Music</option>
+							<option value="cm">CM</option>
+							<option value="pv">PV</option>
+							<option value="tv_special">TV Special</option>
+						</select>
+						<input type="submit" id="search-anime" value="Search" />
+						<button id="clear-button" type="button">Clear</button>
+					</form>
+				</div>
+				<div id="data-anime"></div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

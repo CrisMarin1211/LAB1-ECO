@@ -1,0 +1,204 @@
+body {
+	background-color: #000000;
+	color: #ff0077;
+	font-family: 'Orbitron', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Contenedor principal */
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(120deg, #0d028a, #000004);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	padding: 20px;
+}
+
+/* Título principal */
+.title h1 {
+	font-family: 'Chillax', sans-serif;
+	font-size: 4rem;
+	color: #ffffff;
+	margin-bottom: 2rem;
+	z-index: 1;
+	text-align: center;
+}
+
+/* Botón de Fetch Random User */
+#fetch-button {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+	margin: 20px 0;
+}
+
+#fetch-button:hover {
+	background-color: #a6a6a6;
+	transform: scale(1.05);
+}
+
+/* Contenedor del botón de Fetch Cat Fact */
+.cats-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+/* Botón de Fetch Cat Fact */
+#fetch-cat-fact-button {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+	margin: 20px 0;
+}
+
+#fetch-cat-fact-button:hover {
+	background-color: #c5c5c5;
+	transform: scale(1.05);
+}
+
+/* Formulario de búsqueda de anime*/
+.form-search-anime {
+	padding: 2rem;
+	border-radius: 10px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(10px);
+	justify-content: center;
+}
+
+.form-search-anime input,
+.form-search-anime select,
+.form-search-anime button {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	justify-content: center;
+	background-color: #ff00bb00;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 5px 5px 0 0;
+	padding: 5px 15px;
+	margin: 5px;
+	outline: none;
+}
+
+.form-search-anime input::placeholder {
+	color: #ffffffc5;
+}
+
+.form-search-anime input[type='submit'],
+.form-search-anime button {
+	background-color: #1900ff88;
+	color: white;
+	padding: 5px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.form-search-anime input[type='submit']:hover,
+.form-search-anime button:hover {
+	background-color: #1705bd;
+}
+
+/* Contenedor de anime */
+#data-anime {
+	margin-top: 20px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	z-index: 1;
+	width: 95%;
+	max-width: 1300px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+/* Contenedor de cat facts */
+#data-cats-container {
+	margin-top: 20px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	z-index: 1;
+	width: 63%;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+/* Contenedor de users */
+#data-container {
+	margin-top: 20px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	z-index: 1;
+	width: 63%;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+/* El Estilo de las tarjetas respuesta*/
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 70%;
+	height: auto;
+	display: block;
+	border: 2px solid #ffffffc3;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.card h2,
+.card p {
+	margin: 5px 0;
+	text-align: center;
+}
+
+/* Mensajes de Loading y Error */
+p {
+	text-align: center;
+	font-size: 1rem;
+	margin: 20px 0;
+	color: #ffffff;
+}
